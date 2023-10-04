@@ -1,8 +1,4 @@
-"use client";
-
-import { Fragment, useEffect } from "react";
-import AOS from "aos";
-import Image from "next/image";
+import { Fragment } from "react";
 
 import {
   Card,
@@ -12,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Metadata } from "next";
 
 const services = {
   extras: {
@@ -107,12 +104,11 @@ const services = {
   ],
 };
 
-export default function ServicesPage() {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
+export const metadata: Metadata = {
+  title: "Services - Spot-Less Car Spa",
+};
 
+export default function ServicesPage() {
   return (
     <div className="py-40 md:py-32 relative flex flex-col md:flex-row bg-[#1b1a1c]">
       <div className="z-40 w-full min-h-screen container">
