@@ -7,12 +7,6 @@ import ThemeToggle from "./theme-toggle";
 import { Button, buttonVariants } from "./ui/button";
 import { cn } from "@/lib/utils";
 
-const navigation = [
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
-];
-
 export default function Topbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
@@ -22,8 +16,10 @@ export default function Topbar() {
       </Link>
       <nav
         className={cn(
-          navbarOpen ? "absolute top-[125px] flex flex-col bg-black" : "hidden",
-          "md:flex md:flex-row items-center md:text-xl space-x-8 container"
+          navbarOpen
+            ? "absolute top-[125px] flex flex-col bg-[#F009] p-6 backdrop-blur-md"
+            : "hidden",
+          "md:flex md:flex-row items-center justify-end md:text-xl md:space-x-8 container"
         )}
       >
         <Link href="/" className="py-4">
@@ -35,9 +31,21 @@ export default function Topbar() {
         <Link href="#services" className="py-4">
           Services
         </Link>
-        <Link href="#contact" className="py-4">
-          Contact
-        </Link>
+        <div className="flex items-center">
+          <div className="mr-4">
+            <p className="text-xl md:text-gray-400">Located in Lithona</p>
+            <h4 className="text-xl md:text-gray-400">7505 Covington Hwy</h4>
+          </div>
+          <a
+            href="https://maps.app.goo.gl/RxGsbN2nzd6gLj1t7"
+            className={cn(
+              buttonVariants({ variant: "ghost" }),
+              "w-50 p-6 bg-red-600 rounded-none"
+            )}
+          >
+            Get Directions
+          </a>
+        </div>
       </nav>
       <Button
         variant="link"
