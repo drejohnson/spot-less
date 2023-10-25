@@ -28,7 +28,7 @@ export default function Topbar() {
         <Link href="#about" className="py-4">
           About Us
         </Link>
-        <Link href="#services" className="py-4">
+        <Link href="/services" className="py-4">
           Services
         </Link>
         <div className="flex items-center">

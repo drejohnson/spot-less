@@ -113,20 +113,20 @@ export default function ServicesPage() {
     <div className="py-40 md:py-32 relative flex flex-col md:flex-row bg-[#1b1a1c]">
       <div className="z-40 w-full min-h-screen container">
         <div className="mx-auto mb-28">
-          <h1 className="text-secondary text-6xl md:text-9xl font-bold uppercase">
+          <h1 className="text-white text-6xl md:text-9xl font-bold uppercase">
             Services
           </h1>
         </div>
-        <h2 className="text-accent text-4xl font-bold uppercase">Wash</h2>
+        <h2 className="text-white text-4xl font-bold uppercase">Wash</h2>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(380px,1fr))] gap-4 my-6">
           {services.wash_detail.map((service) => (
             <Fragment key={service.vehicle}>
               <Card className="grid md:grid-cols-2 items-center bg-transparent">
                 <CardHeader>
-                  <CardTitle className="text-primary  uppercase">
+                  <CardTitle className="text-primary uppercase">
                     {service.vehicle}
                     {service.models.map((model) => (
-                      <p key={model} className="text-sm text-secondary">
+                      <p key={model} className="text-sm text-white">
                         {model}
                       </p>
                     ))}
@@ -135,19 +135,19 @@ export default function ServicesPage() {
                 </CardHeader>
                 <CardContent>
                   <p>
-                    <span className="text-secondary text-2xl mr-2 font-bold">
+                    <span className="text-white text-2xl mr-2 font-bold">
                       ${service.wash.full}
                     </span>
                     Full
                   </p>
                   <p>
-                    <span className="text-secondary text-2xl mr-2 font-bold">
+                    <span className="text-white text-2xl mr-2 font-bold">
                       ${service.wash.exterior}
                     </span>
                     Exterior
                   </p>
                   <p>
-                    <span className="text-secondary text-2xl mr-2 font-bold">
+                    <span className="text-white text-2xl mr-2 font-bold">
                       ${service.wash_wax}
                     </span>
                     Wash + Wax
@@ -157,7 +157,7 @@ export default function ServicesPage() {
             </Fragment>
           ))}
         </div>
-        <h2 className="text-accent text-4xl font-bold uppercase">Detail</h2>
+        <h2 className="text-white text-4xl font-bold uppercase">Detail</h2>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(380px,1fr))] gap-4 my-6">
           {services.wash_detail.map((service) => (
             <Fragment key={service.vehicle}>
@@ -166,7 +166,7 @@ export default function ServicesPage() {
                   <CardTitle className="text-primary  uppercase">
                     {service.vehicle}
                     {service.models.map((model) => (
-                      <p key={model} className="text-sm text-secondary">
+                      <p key={model} className="text-sm text-white">
                         {model}
                       </p>
                     ))}
@@ -175,13 +175,13 @@ export default function ServicesPage() {
                 </CardHeader>
                 <CardContent>
                   <p>
-                    <span className="text-secondary text-2xl mr-2 font-bold">
+                    <span className="text-white text-2xl mr-2 font-bold">
                       ${service.full_detail}
                     </span>
                     Full Detail
                   </p>
                   <p>
-                    <span className="text-secondary text-2xl mr-2 font-bold">
+                    <span className="text-white text-2xl mr-2 font-bold">
                       ${service.interior_detail}
                     </span>
                     Interior Detail
@@ -191,9 +191,7 @@ export default function ServicesPage() {
             </Fragment>
           ))}
         </div>
-        <h2 className="text-accent text-4xl font-bold uppercase">
-          Clean Seats
-        </h2>
+        <h2 className="text-white text-4xl font-bold uppercase">Clean Seats</h2>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(380px,1fr))] gap-4 my-6">
           <Card className="grid grid-rows-2 items-center bg-transparent">
             <CardHeader>
@@ -202,13 +200,13 @@ export default function ServicesPage() {
             </CardHeader>
             <CardContent>
               <p>
-                <span className="text-secondary text-2xl mr-2 font-bold">
+                <span className="text-white text-2xl mr-2 font-bold">
                   ${services.extras.clean_seats.cars.regular}
                 </span>
                 Regular
               </p>
               <p>
-                <span className="text-secondary text-2xl mr-2 font-bold">
+                <span className="text-white text-2xl mr-2 font-bold">
                   ${services.extras.clean_seats.cars.leather_treatment}
                 </span>
                 Leather Treatment
@@ -224,13 +222,13 @@ export default function ServicesPage() {
             </CardHeader>
             <CardContent>
               <p>
-                <span className="text-secondary text-2xl mr-2 font-bold">
+                <span className="text-white text-2xl mr-2 font-bold">
                   ${services.extras.clean_seats.trucks_suv.regular}
                 </span>
                 Regular
               </p>
               <p>
-                <span className="text-secondary text-2xl mr-2 font-bold">
+                <span className="text-white text-2xl mr-2 font-bold">
                   ${services.extras.clean_seats.trucks_suv.leather_treatment}
                 </span>
                 Leather Treatment
@@ -239,7 +237,7 @@ export default function ServicesPage() {
           </Card>
         </div>
 
-        <h2 className="text-accent text-4xl font-bold uppercase">
+        <h2 className="text-white text-4xl font-bold uppercase">
           Shampoo Carpet
         </h2>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(380px,1fr))] gap-4 my-6">
@@ -252,13 +250,13 @@ export default function ServicesPage() {
             </CardHeader>
             <CardContent>
               <p>
-                <span className="text-secondary text-2xl mr-2 font-bold">
+                <span className="text-white text-2xl mr-2 font-bold">
                   ${services.extras.shampoo_carpet.cars}
                 </span>
                 Cars
               </p>
               <p>
-                <span className="text-secondary text-2xl mr-2 font-bold">
+                <span className="text-white text-2xl mr-2 font-bold">
                   ${services.extras.shampoo_carpet.trucks_suv}
                 </span>
                 Trucks and SUVs
@@ -267,7 +265,7 @@ export default function ServicesPage() {
           </Card>
         </div>
 
-        <h2 className="text-accent text-4xl font-bold uppercase">Extras</h2>
+        <h2 className="text-white text-4xl font-bold uppercase">Extras</h2>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(380px,1fr))] gap-4 my-6">
           <Card className="grid grid-rows-2 items-center bg-transparent">
             <CardHeader>
@@ -278,13 +276,13 @@ export default function ServicesPage() {
             </CardHeader>
             <CardContent>
               <p>
-                <span className="text-secondary text-2xl mr-2 font-bold">
+                <span className="text-white text-2xl mr-2 font-bold">
                   ${services.extras.engine_clean.cars}
                 </span>
                 Cars
               </p>
               <p>
-                <span className="text-secondary text-2xl mr-2 font-bold">
+                <span className="text-white text-2xl mr-2 font-bold">
                   ${services.extras.engine_clean.cars}
                 </span>
                 Trucks and SUVs
@@ -300,7 +298,7 @@ export default function ServicesPage() {
             </CardHeader>
             <CardContent>
               <p>
-                <span className="text-secondary text-2xl mr-2 font-bold">
+                <span className="text-white text-2xl mr-2 font-bold">
                   ${services.extras.shine_chrome_rims}
                 </span>
                 Cars + Trucks + SUVs
@@ -316,7 +314,7 @@ export default function ServicesPage() {
             </CardHeader>
             <CardContent>
               <p>
-                <span className="text-secondary text-2xl font-bold">
+                <span className="text-white text-2xl font-bold">
                   ${services.extras.headlight_restore_each}
                 </span>
                 /each
@@ -332,7 +330,7 @@ export default function ServicesPage() {
             </CardHeader>
             <CardContent>
               <p>
-                <span className="text-secondary text-2xl mr-2 font-bold">
+                <span className="text-white text-2xl mr-2 font-bold">
                   ${services.extras.dashboard_shine_dressing}
                 </span>
                 Cars + Trucks + SUVs
@@ -348,7 +346,7 @@ export default function ServicesPage() {
             </CardHeader>
             <CardContent>
               <p>
-                <span className="text-secondary text-2xl mr-2 font-bold">
+                <span className="text-white text-2xl mr-2 font-bold">
                   ${services.extras.wash_silicon_tires}
                 </span>
                 Cars + Trucks + SUVs
