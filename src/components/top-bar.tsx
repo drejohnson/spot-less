@@ -25,9 +25,6 @@ export default function Topbar() {
         <Link href="/" className="py-4">
           Home
         </Link>
-        <Link href="#about" className="py-4">
-          About Us
-        </Link>
         <Link href="/services" className="py-4">
           Services
         </Link>
